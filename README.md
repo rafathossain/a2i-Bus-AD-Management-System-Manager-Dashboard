@@ -2,9 +2,11 @@
   <b>a2i Bus AD Management System</b>
 </p>
 
+<img src="assets/img/screenshots/ss1.png" width="100%"/>
+
 ## Demo
 
-The demo can be viewed <a href="" target="_blank">here</a>.
+The demo can be viewed <a href="https://rafathossain96.github.io/a2i-Bus-AD-Management-System-Manager-Dashboard/" target="_blank">here</a>.
 
 ## Features
 
