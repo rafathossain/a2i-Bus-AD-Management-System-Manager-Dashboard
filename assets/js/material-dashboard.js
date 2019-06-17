@@ -51,23 +51,23 @@ var seq2 = 0,
 
 $(document).ready(function () {
 
-	$('.form-file-simple .inputFileVisible').click(function () {
-		$(this).siblings('.inputFileHidden').trigger('click')
-	}), $('.form-file-simple .inputFileHidden').change(function () {
-		var a = $(this).val().replace(/C:\\fakepath\\/i, '');
-		$(this).siblings('.inputFileVisible').val(a)
-	}), $('.form-file-multiple .inputFileVisible, .form-file-multiple .input-group-btn').click(function () {
-		$(this).parent().parent().find('.inputFileHidden').trigger('click'), $(this).parent().parent().addClass('is-focused')
-	}), $('.form-file-multiple .inputFileHidden').change(function () {
-		for (var a = '', b = 0; b < $(this).get(0).files.length; ++b) a += b < $(this).get(0).files.length - 1 ? $(this).get(0).files.item(b).name + ',' : $(this).get(0).files.item(b).name;
-		$(this).siblings('.input-group').find('.inputFileVisible').val(a)
-	}), $('.form-file-multiple .btn').on('focus', function () {
-		$(this).parent().siblings().trigger('focus')
-	}), $('.form-file-multiple .btn').on('focusout', function () {
-		$(this).parent().siblings().trigger('focusout')
-	}), 0 != $('.selectpicker').length && $('.selectpicker').selectpicker(), $('[data-toggle="popover"]').popover(), $('.carousel').carousel({
-		interval: 3e3
-	});
+	$('.form-file-simple .inputFileVisible').click(function() {
+        $(this).siblings('.inputFileHidden').trigger('click')
+    }), $('.form-file-simple .inputFileHidden').change(function() {
+        var a = $(this).val().replace(/C:\\fakepath\\/i, '');
+        $(this).siblings('.inputFileVisible').val(a)
+    }), $('.form-file-multiple .inputFileVisible, .form-file-multiple .input-group-btn').click(function() {
+        $(this).parent().parent().find('.inputFileHidden').trigger('click'), $(this).parent().parent().addClass('is-focused')
+    }), $('.form-file-multiple .inputFileHidden').change(function() {
+        for (var a = '', b = 0; b < $(this).get(0).files.length; ++b) a += b < $(this).get(0).files.length - 1 ? $(this).get(0).files.item(b).name + ',' : $(this).get(0).files.item(b).name;
+        $(this).siblings('.input-group').find('.inputFileVisible').val(a)
+    }), $('.form-file-multiple .btn').on('focus', function() {
+        $(this).parent().siblings().trigger('focus')
+    }), $('.form-file-multiple .btn').on('focusout', function() {
+        $(this).parent().siblings().trigger('focusout')
+    }), 0 != $('.selectpicker').length && $('.selectpicker').selectpicker(), $('[data-toggle="popover"]').popover(), $('.carousel').carousel({
+        interval: 3e3
+    });
 
 	$('body').bootstrapMaterialDesign();
 

@@ -45,7 +45,7 @@
 							<p>Dashboard</p>
 						</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<a class="nav-link" href="../profile/">
 							<i class="material-icons">person</i>
 							<p>Manager Profile</p>
@@ -63,7 +63,7 @@
 							<p>Manage Ads</p>
 						</a>
 					</li>
-					<li class="nav-item ">
+					<li class="nav-item active">
 						<a class="nav-link" href="../statistics/">
 							<i class="material-icons">featured_play_list</i>
 							<p>Ad Statistics</p>
@@ -83,7 +83,7 @@
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
-						<a class="navbar-brand" href="#pablo">Manager Profile</a>
+						<a class="navbar-brand" href="#pablo">ADs Statistics</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -133,85 +133,93 @@
 			<!-- End Navbar -->
 			<div class="content">
 				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header card-header-success">
-									<h4 class="card-title">User ID # HDHSH6T8S</h4>
-									<p class="card-category">Update your profile</p>
-								</div>
-								<div class="card-body">
-									<form>
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label class="bmd-label-floating">Fist Name</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label class="bmd-label-floating">Last Name</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">Username</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">Email address</label>
-													<input type="email" class="form-control">
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">Company Name</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="bmd-label-floating">Adress</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">City</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">Country</label>
-													<input type="text" class="form-control" value="Bangladesh">
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group">
-													<label class="bmd-label-floating">Postal Code</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-										<button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-										<div class="clearfix"></div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
+                        <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="card">
+                                        <div class="card-header card-header-success">
+                                            <h4 class="card-title">AD Statistics</h4>
+                                            <p class="card-category">View your AD Statistics here</p>
+                                        </div>
+                                        <div class="card-body table-responsive">
+                                            <table class="table table-hover">
+                                                <thead class="text-success">
+                                                    <th>SN</th>
+                                                    <th>ID</th>
+                                                    <th>Title</th>
+                                                    <th>Bus Name</th>
+                                                    <th style="text-align: center">Duration</th>
+                                                    <th style="text-align: center">Runtime</th>
+                                                    <th style="text-align: center">Status</th>
+                                                    <th style="text-align: center">Actions</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>B7T2RS</td>
+                                                        <td>a2i Promo AD</td>
+                                                        <td>BRTC Bus 1</td>
+                                                        <td style="text-align: center">1:05 min</td>
+                                                        <td style="text-align: center">32:08 min</td>
+                                                        <td style="text-align: center"><span
+                                                                class="badge badge-pill badge-success">Running</span></td>
+                                                        <td style="text-align: center">
+                                                            <a href="#" class="btn btn-link btn-success btn-just-icon edit">
+                                                                <i class="material-icons">directions_bus</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                            <a href="#" class="btn btn-link btn-primary btn-just-icon edit">
+                                                                <i class="material-icons">dvr</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>B7T2RS</td>
+                                                        <td>a2i Promo AD</td>
+                                                        <td>BRTC Bus 2</td>
+                                                        <td style="text-align: center">1:05 min</td>
+                                                        <td style="text-align: center">32:08 min</td>
+                                                        <td style="text-align: center"><span
+                                                            class="badge badge-pill badge-success">Running</span></td>
+                                                        <td style="text-align: center">
+                                                            <a href="#" class="btn btn-link btn-success btn-just-icon edit">
+                                                                <i class="material-icons">directions_bus</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                            <a href="#" class="btn btn-link btn-primary btn-just-icon edit">
+                                                                <i class="material-icons">dvr</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>B7T2RS</td>
+                                                        <td>a2i Promo AD</td>
+                                                        <td>BRTC Bus 3</td>
+                                                        <td style="text-align: center">1:05 min</td>
+                                                        <td style="text-align: center">32:08 min</td>
+                                                        <td style="text-align: center"><span
+                                                            class="badge badge-pill badge-success">Running</span></td>
+                                                        </td>
+                                                        <td style="text-align: center">
+                                                            <a href="#" class="btn btn-link btn-success btn-just-icon edit">
+                                                                <i class="material-icons">directions_bus</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                            <a href="#" class="btn btn-link btn-primary btn-just-icon edit">
+                                                                <i class="material-icons">dvr</i>
+                                                                <div class="ripple-container"></div>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 				</div>
 			</div>
 			<footer class="footer">
