@@ -57,6 +57,12 @@
 							<p>Upload Ads</p>
 						</a>
 					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="../archive/">
+                            <i class="material-icons">archive</i>
+                            <p>Ad Archive</p>
+                        </a>
+                    </li>
 					<li class="nav-item ">
 						<a class="nav-link" href="../manage/">
 							<i class="material-icons">movie</i>
@@ -137,8 +143,16 @@
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header card-header-success">
-									<h4 class="card-title">User ID # HDHSH6T8S</h4>
-									<p class="card-category">Update your profile</p>
+									<div class="row">
+										<div class="col-sm-1">
+											<img src="../assets/img/faces/card-profile1-square.jpg" width="100%"/>
+										</div>
+										<div class="col-sm-11">
+											<h4 class="card-title">First Name Last Name</h4>
+											<h4 class="card-title">User ID # HDHSH6T8S</h4>
+											<p class="card-category">Update your profile</p>
+										</div>
+									</div>
 								</div>
 								<div class="card-body">
 									<form>
@@ -204,6 +218,36 @@
 													<input type="text" class="form-control">
 												</div>
 											</div>
+											<div class="col-md-6">
+                                                <div class="form-group form-file-upload form-file-multiple">
+                                                    <input type="file" class="inputFileHidden">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control inputFileVisible"
+                                                            placeholder="Upload profile photo">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="btn btn-fab btn-round btn-primary">
+                                                                <i class="material-icons">attach_file</i>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-md-6">
+                                                <div class="form-group form-file-upload form-file-multiple">
+                                                    <input type="file" multiple="" class="inputFileHidden">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control inputFileVisible"
+                                                            placeholder="Select NID/Trade License">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="btn btn-fab btn-round btn-primary">
+                                                                <i class="material-icons">attach_file</i>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
 										</div>
 										<button type="submit" class="btn btn-primary pull-right">Update Profile</button>
 										<div class="clearfix"></div>

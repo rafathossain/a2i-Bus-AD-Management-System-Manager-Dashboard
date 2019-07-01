@@ -24,6 +24,7 @@
     <style>
     .button_transparent{
         background: #ffffff !important;
+        color: black !important;
     }
     </style>
 </head>
@@ -64,6 +65,12 @@
                         <a class="nav-link" href="../upload/">
                             <i class="material-icons">cloud_upload</i>
                             <p>Upload Ads</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../archive/">
+                            <i class="material-icons">archive</i>
+                            <p>Ad Archive</p>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -177,17 +184,93 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">AD Duration</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="number" class="form-control" min="10" max="120">
+                                                    <small>Minimum ad duration 10 sec and maximum is 120 sec.</small>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select Bus" data-size="7" style="color: white !important">
-                                                        <option>BRTC 1</option>
-                                                        <option>BRTC 2</option>
-                                                        <option>BRTC 3</option>
-                                                        <option>BRTC 4</option>
+                                                    <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Off-peak run time" data-size="7" style="color: white !important">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Peak run time" data-size="7" style="color: white !important">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select AD Type" data-size="7" style="color: white !important">
+                                                        <option>Image</option>
+                                                        <option>GIF</option>
+                                                        <option>Animation</option>
+                                                        <option>Video</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p></p>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        Select AD Schedule Date
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select Day" data-size="7" style="color: white !important">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select Month" data-size="7" style="color: white !important">
+                                                                <option>January</option>
+                                                                <option>February</option>
+                                                                <option>March</option>
+                                                                <option>April</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select Year" data-size="7" style="color: white !important">
+                                                                <option selected>2019</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p></p>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        Select Preferred Bus
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="Select Bus" data-size="7" style="color: white !important">
+                                                                <option>BRTC 1 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                                <option>BRTC 2 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                                <option>BRTC 3 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                                <option>BRTC 4 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 

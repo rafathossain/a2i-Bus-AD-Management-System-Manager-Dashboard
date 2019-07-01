@@ -17,6 +17,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<!-- CSS Files -->
 	<link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	<link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <style>
+    .button_transparent{
+        background: #ffffff !important;
+    }
+    </style>
 </head>
 
 <body class="">
@@ -57,6 +64,12 @@
 							<p>Upload Ads</p>
 						</a>
 					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="../archive/">
+                            <i class="material-icons">archive</i>
+                            <p>Ad Archive</p>
+                        </a>
+                    </li>
 					<li class="nav-item ">
 						<a class="nav-link" href="../manage/">
 							<i class="material-icons">movie</i>
@@ -138,17 +151,52 @@
                                     <div class="card">
                                         <div class="card-header card-header-success">
                                             <h4 class="card-title">AD Statistics</h4>
-                                            <p class="card-category">View your AD Statistics here</p>
+											<p class="card-category">View your AD Statistics here</p>
                                         </div>
                                         <div class="card-body table-responsive">
+											<div class="row" style="margin-top: 10px; margin-bottom: 10px">
+													<div class="col-md-12">
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Search Ads">
+															</div>
+														</div>
+														<div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="AD Filter (Bus Wise)" data-size="7" style="color: white !important">
+                                                        <option>BRTC 1 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                        <option>BRTC 2 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                        <option>BRTC 3 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                        <option>BRTC 4 (Abdullapur -> Airport -> Banani -> Mohakhali)</option>
+                                                    </select>
+                                                </div>
+											</div>
+											<div class="col-md-4">
+													<div class="form-group">
+														<select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="AD Filter (Type Wise)" data-size="7" style="color: white !important">
+															<option>Image</option>
+															<option>GIF</option>
+															<option>Animation</option>
+															<option>Video</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-4">
+														<div class="form-group">
+															<select class="selectpicker form-control" id="sel1" data-style="button_transparent" title="AD Filter (Timeline Wise)" data-size="7" style="color: white !important">
+																<option>Daily</option>
+																<option>Weekly</option>
+																<option>Monthly</option>
+															</select>
+														</div>
+													</div>
+											</div>
                                             <table class="table table-hover">
                                                 <thead class="text-success">
                                                     <th>SN</th>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Bus Name</th>
-                                                    <th style="text-align: center">Duration</th>
-                                                    <th style="text-align: center">Runtime</th>
+													<th>Bus Name</th>
+													<th style="text-align: center">AD Type</th>
                                                     <th style="text-align: center">Status</th>
                                                     <th style="text-align: center">Actions</th>
                                                 </thead>
@@ -157,9 +205,8 @@
                                                         <td>1</td>
                                                         <td>B7T2RS</td>
                                                         <td>a2i Promo AD</td>
-                                                        <td>BRTC Bus 1</td>
-                                                        <td style="text-align: center">1:05 min</td>
-                                                        <td style="text-align: center">32:08 min</td>
+														<td>BRTC Bus 1</td>
+														<td style="text-align: center">Image/GIF/Animation/Video</td>
                                                         <td style="text-align: center"><span
                                                                 class="badge badge-pill badge-success">Running</span></td>
                                                         <td style="text-align: center">
@@ -177,9 +224,8 @@
                                                         <td>2</td>
                                                         <td>B7T2RS</td>
                                                         <td>a2i Promo AD</td>
-                                                        <td>BRTC Bus 2</td>
-                                                        <td style="text-align: center">1:05 min</td>
-                                                        <td style="text-align: center">32:08 min</td>
+														<td>BRTC Bus 2</td>
+														<td style="text-align: center">Image/GIF/Animation/Video</td>
                                                         <td style="text-align: center"><span
                                                             class="badge badge-pill badge-success">Running</span></td>
                                                         <td style="text-align: center">
@@ -197,9 +243,8 @@
                                                         <td>3</td>
                                                         <td>B7T2RS</td>
                                                         <td>a2i Promo AD</td>
-                                                        <td>BRTC Bus 3</td>
-                                                        <td style="text-align: center">1:05 min</td>
-                                                        <td style="text-align: center">32:08 min</td>
+														<td>BRTC Bus 3</td>
+														<td style="text-align: center">Image/GIF/Animation/Video</td>
                                                         <td style="text-align: center"><span
                                                             class="badge badge-pill badge-success">Running</span></td>
                                                         </td>
